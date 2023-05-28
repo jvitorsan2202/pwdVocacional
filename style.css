@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Minecraftia';
+    src: url('Minecraftia-Regular.ttf');
+}
+
+body{
+    font-family: 'Minecraftia';
+    background-color: #cbcfb4;
+    color: #353130;
+}
+#title{
+    text-align: center;
+}
+
+#form{
+    text-align: center;
+    
+    padding: 5px;
+}
+#inp{
+    font-family: 'Minecraftia';
+    background-color: #8f8f8d;
+    color: #ffffff;
+    margin: 2px;
+    border-radius: 15px;
+}
+a{
+    border-radius: 5px;
+    background-color: #8f8f8d;
+    text-decoration: none;
+    color:#353130 ;
+}
+#subForm{
+    text-align: center;
+}
+
+
+
+.quest{
+    margin: 10px;
+    border-radius: 15px;
+    background-color: #c0c4ad;
+    width: 400px;
+}
