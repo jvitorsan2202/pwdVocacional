@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro para Teste Vocacional</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="title">
+        <h2>Teste Vocacional</h2>
+    </div>
+
+    <div id="form">
+        <p><b>Cadastro Pessoal</b></p>
+        <form id="cadastroForm">
+            <input type="text" placeholder="Nome" id="nomeInput">
+            <input type="text" placeholder="Sexo" id="sexoInput">
+            <input type="text" placeholder="Endereço" id="enderecoInput">
+            <input type="text" placeholder="Bairro" id="bairroInput">
+            <input type="text" placeholder="Cidade" id="cidadeInput">
+            <input type="text" placeholder="CPF" id="cpfInput">
+            <input type="text" placeholder="Ano de Nascimento" id="anoInput">
+            <div id="subForm">
+                <a href="App.html"><button type="button" onclick="mostrarDados()">Iniciar</button></a>
+            </div>
+            <p>Estes dados serão usados APENAS para o TESTE VOCACIONAL,
+                tudo aqui será DESCARTADO posteriormente.
+            </p>
+        </form>
+    </div>
+
+    <script>
+        function mostrarDados() {
+            var nome = document.getElementById("nomeInput").value;
+            var sexo = document.getElementById("sexoInput").value;
+            var endereco = document.getElementById("enderecoInput").value;
+            var bairro = document.getElementById("bairroInput").value;
+            var cidade = document.getElementById("cidadeInput").value;
+            var cpf = document.getElementById("cpfInput").value;
+            var ano = document.getElementById("anoInput").value;
+
+            var mensagem = "Dados do Cadastro:\n\n";
+            mensagem += "Nome: " + nome + "\n";
+            mensagem += "Sexo: " + sexo + "\n";
+            mensagem += "Endereço: " + endereco + "\n";
+            mensagem += "Bairro: " + bairro + "\n";
+            mensagem += "Cidade: " + cidade + "\n";
+            mensagem += "CPF: " + cpf + "\n";
+            mensagem += "Ano de Nascimento: " + ano;
+
+            alert(mensagem);
+        }
+    </script>
+</body>
+
+</html>
